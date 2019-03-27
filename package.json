@@ -2,9 +2,12 @@
   "name": "restful-starter-project",
   "version": "1.0.0",
   "description": "Starter package for RESTful Express API app",
+  "repository": {
+    "url": "https://github.com/frehman/restful-express-starter.git"
+  },
   "main": "index.js",
   "scripts": {
-    "lint": "eslint",
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -23,7 +26,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-nodemon": "^2.4.2"
   },
   "devDependencies": {
     "eslint": "^5.15.3"
