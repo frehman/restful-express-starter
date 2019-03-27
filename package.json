@@ -4,6 +4,7 @@
   "description": "Starter package for RESTful Express API app",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -23,5 +24,8 @@
   "dependencies": {
     "express": "^4.16.4",
     "gulp": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3"
   }
 }
