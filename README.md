@@ -1,2 +1,2 @@
 # restful-express-starter
-Starter project for restful api with express
+Starter project for RESTful api with Express
