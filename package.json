@@ -1,0 +1,27 @@
+{
+  "name": "restful-starter-project",
+  "version": "1.0.0",
+  "description": "Starter package for RESTful Express API app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "heroku",
+    "nodemon",
+    "node",
+    "express",
+    "bunyan",
+    "mocha",
+    "jasmine",
+    "istanbul",
+    "gulp",
+    "postgres"
+  ],
+  "author": "Feroz Abdul Rehman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "gulp": "^4.0.0"
+  }
+}
