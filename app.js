@@ -1,10 +1,11 @@
-var express = require('express');
+const express = require('express');
 
-var port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 express()
+  .use(require('./controllers'))
   .get('/', (req, res) => {
-    res.send('Welcome to the API.');
+    res.send('Hello World API.');
   })
   .listen(port, () => {
     console.log('Running on port', port);
