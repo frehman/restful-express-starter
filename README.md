@@ -4,7 +4,7 @@ Starter project for RESTful api with Express
 
 ## Local setup
 
-After cloning the repo, run `npm install`
+After cloning the repo, run `npm install`.
 Then run everything locally using `gulp dev`
 
 - To use the project as is, in your local setup, you must have a postgres server with a table with a definition similar to:
