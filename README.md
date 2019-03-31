@@ -33,6 +33,11 @@ ALTER TABLE public.users
 ```
 
 - Insert at least one row in the db.
+- Create a `.env` file in the root of the project with an entry similar to
+
+```
+DATABASE_URL=postgres://postgres:myPassword@localhost/dbName
+```
 
 ## To run the tests
 
