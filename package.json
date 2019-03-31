@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc mocha"
   },
   "keywords": [
     "heroku",
@@ -17,7 +17,7 @@
     "express",
     "bunyan",
     "mocha",
-    "jasmine",
+    "chai",
     "istanbul",
     "gulp",
     "postgres"
@@ -34,6 +34,10 @@
     "sequelize": "^5.2.6"
   },
   "devDependencies": {
-    "eslint": "^5.15.3"
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "eslint": "^5.15.3",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0"
   }
 }

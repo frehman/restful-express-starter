@@ -2,7 +2,9 @@ module.exports = {
   env: {
     browser: true,
     commonjs: true,
-    es6: true
+    es6: true,
+    node: true,
+    mocha: true
   },
   globals: {
     Atomics: 'readonly',
@@ -13,6 +15,8 @@ module.exports = {
   },
   rules: {
     // run `npx eslint . --fix` from the command line if you want to fix
-    'object-curly-spacing': [1, 'always']
+    'object-curly-spacing': [1, 'always'],
+    'no-var': 1,
+    semi: [1, 'always']
   }
 };
