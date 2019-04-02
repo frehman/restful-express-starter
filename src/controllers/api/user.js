@@ -5,12 +5,15 @@ const log = require('../../logger');
 router
   .get('/', (req, res) => {
     User.findAll({
+      /** When return all data, only show id, first name and last name. */
       attributes: ['id', 'first_name', 'last_name']
     }).then(users => {
       log.info(
+        /** @todo If returning too many, limit the number of returned records. */
         { itemCount: Object.keys(users).length },
         `Count of number of items returned`
       );
+      /** To add HATEAOS, need to add a new property to every record. */
       const returnedUsers = users.map(user => {
         const returnedUser = user.toJSON();
         returnedUser.links = {};

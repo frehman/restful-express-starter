@@ -4,7 +4,7 @@ const Sequelize = require('sequelize');
 class user extends Sequelize.Model {}
 user.init(
   {
-    // attributes
+    /**  @property or attributes */
     first_name: {
       type: Sequelize.STRING,
       allowNull: false
