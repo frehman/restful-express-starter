@@ -1,10 +1,19 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize(process.env.DATABASE_URL, {
-  dialect: 'postgres'
-});
+let sequelize;
 
-/* // Use this block to test if the connection is OK
+if (process.env.TEST) {
+  sequelize = new Sequelize(process.env.DATABASE_URL_TEST, {
+    dialect: 'postgres'
+  });
+} else {
+  sequelize = new Sequelize(process.env.DATABASE_URL, {
+    dialect: 'postgres'
+  });
+}
+
+/*
+// Use this block to test if the connection is OK
 sequelize
   .authenticate()
   .then(() => {
