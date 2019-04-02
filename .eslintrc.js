@@ -18,5 +18,7 @@ module.exports = {
     'object-curly-spacing': [1, 'always'],
     'no-var': 1,
     semi: [1, 'always']
-  }
+  },
+  plugins: ['security'],
+  extends: ['plugin:security/recommended']
 };
