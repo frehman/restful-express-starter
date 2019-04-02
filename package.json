@@ -20,7 +20,8 @@
     "chai",
     "istanbul",
     "gulp",
-    "postgres"
+    "postgres",
+    "eslint, eslint-plugin-security"
   ],
   "author": "Feroz Abdul Rehman",
   "license": "ISC",
@@ -30,6 +31,7 @@
     "express": "^4.16.4",
     "gulp": "^4.0.0",
     "gulp-nodemon": "^2.4.2",
+    "helmet": "^3.16.0",
     "pg": "^7.9.0",
     "pg-hstore": "^2.3.2",
     "sequelize": "^5.2.6"
@@ -39,6 +41,7 @@
     "chai-http": "^4.2.1",
     "dotenv": "^7.0.0",
     "eslint": "^5.15.3",
+    "eslint-plugin-security": "^1.4.0",
     "mocha": "^6.0.2",
     "nyc": "^13.3.0"
   }
