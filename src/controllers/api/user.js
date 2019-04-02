@@ -5,15 +5,18 @@ const log = require('../../logger');
 router
   .get('/', (req, res) => {
     User.findAll({
-      /** When return all data, only show id, first name and last name. */
+      /**
+       * When using sequelize's findAll function to return all data, only show id, first name and last name.
+       * Further details are available by clicking the details link.
+       */
       attributes: ['id', 'first_name', 'last_name']
     }).then(users => {
       log.info(
-        /** @todo If returning too many, limit the number of returned records. */
+        /** Keep an eye on the size of returned records. Limit number if this becomes too large. @todo If returning too many, limit the number of returned records. */
         { itemCount: Object.keys(users).length },
         `Count of number of items returned`
       );
-      /** To add HATEAOS, need to add a new property to every record. */
+      /** We're creating a new structure here. To add HATEAOS, we need to add a new property to every record. */
       const returnedUsers = users.map(user => {
         const returnedUser = user.toJSON();
         returnedUser.links = {};
