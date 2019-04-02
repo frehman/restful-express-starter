@@ -16,7 +16,7 @@ Then run everything locally using `gulp dev`
 
 CREATE TABLE public.users
 (
-    id bigint NOT NULL DEFAULT nextval('users_id_seq'::regclass),
+    id bigserial,
     first_name text COLLATE pg_catalog."default" NOT NULL,
     last_name text COLLATE pg_catalog."default" NOT NULL,
     "createdAt" timestamp with time zone,
@@ -41,4 +41,5 @@ DATABASE_URL=postgres://postgres:myPassword@localhost/dbName
 
 ## To run the tests
 
-- In a separate terminal window run `npm test`
+- It is recommended to use a separate db for unit tests.
+- In a separate terminal window, while the app is still running, execute `npm test`
