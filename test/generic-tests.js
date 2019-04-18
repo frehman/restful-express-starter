@@ -21,9 +21,9 @@ describe('Generic tests', () => {
         .get('/')
         .end(function(err, res) {
             expect(err).to.be.null;            
-            expect(res.text).to.contain('Hello World API.');
-            done();
+            expect(res.text).to.contain('Hello World API.');            
         });
+    done();
   });
   it('should load records correctly', done => {
     // prettier-ignore
@@ -32,8 +32,8 @@ describe('Generic tests', () => {
         .end(function(err, res) {
             expect(res).to.have.status(200);
             expect(err).to.be.null;
-            expect(res).to.be.json;
-            done();
+            expect(res).to.be.json;            
         });
+    done();
   });
 });
