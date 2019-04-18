@@ -25,11 +25,7 @@ describe('Generic tests', () => {
             done();
         });
   });
-<<<<<<< HEAD
   it('should load records correctly', done => {
-=======
-  it('should load files correctly', done => {
->>>>>>> 5514cda9af0afafc80abc6acc5e0e43229c131d5
     // prettier-ignore
     chai.request(app)
         .get('/api/user')
