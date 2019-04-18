@@ -4,7 +4,10 @@ const chai = require('chai'),
 const path = require('path');
 const dotEnvPath = path.resolve('./.env');
 
-require('dotenv').config({ path: dotEnvPath });
+if (dotEnvPath) {
+  console.log('dotEnvPath');
+  require('dotenv').config({ path: dotEnvPath });
+}
 process.env.TEST = true;
 
 const app = require('../app');
@@ -12,7 +15,7 @@ const app = require('../app');
 chai.use(chaiHttp);
 
 describe('Generic tests', () => {
-  it('app should load correctly', done => {
+  it('should load app correctly', done => {
     // prettier-ignore
     chai.request(app)
         .get('/')
@@ -22,7 +25,7 @@ describe('Generic tests', () => {
             done();
         });
   });
-  it('files should load correctly', done => {
+  it('should load records correctly', done => {
     // prettier-ignore
     chai.request(app)
         .get('/api/user')
