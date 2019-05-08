@@ -1,5 +1,6 @@
 const express = require('express');
 const helmet = require('helmet');
+const log = require('./src/logger');
 
 /**
  * The `heroku local` command usually sets the port to 5000
@@ -18,7 +19,7 @@ app
     res.send('Hello World API.');
   })
   .listen(port, () => {
-    console.log('Running on port', port);
+    log.info({ port: port }, 'Express port number');
   });
 
 module.exports = app;
