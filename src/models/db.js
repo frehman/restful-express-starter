@@ -15,7 +15,7 @@ if (process.env.TEST) {
 
 /**
  * @example
- * // Use this block to test if the connection is OK
+ * // Use this block to test if the connection is OK.
  * sequelize
  *  .authenticate()
  *  .then(() => {
