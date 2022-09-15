@@ -41,7 +41,7 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
-    "documentation": "^9.3.1",
+    "documentation": "^14.0.0",
     "dotenv": "^7.0.0",
     "eslint": "^5.15.3",
     "eslint-plugin-security": "^1.4.0",
