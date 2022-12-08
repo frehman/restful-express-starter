@@ -27,9 +27,9 @@
   "author": "Feroz Abdul Rehman",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.20.1",
     "bunyan": "^1.8.12",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "gulp": "^4.0.0",
     "gulp-nodemon": "^2.4.2",
     "helmet": "^3.16.0",
