@@ -45,7 +45,7 @@
     "dotenv": "^7.0.0",
     "eslint": "^5.15.3",
     "eslint-plugin-security": "^1.4.0",
-    "mocha": "^6.1.4",
+    "mocha": "^10.2.0",
     "nyc": "^14.0.0"
   }
 }
